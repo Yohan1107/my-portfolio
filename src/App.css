@@ -1,0 +1,33 @@
+html { 
+  scroll-behavior: smooth; 
+}
+
+body{
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+:root {
+  --bg: #f4f4f4;
+  --text: #333;
+  --card-bg: #ffffff;
+  --border: #e6e6e6;
+  --link: #0077cc;
+  --accent: #61DBFB;
+}
+
+[data-theme="dark"] {
+  --bg: #111217;
+  --text: #e6e6e6;
+  --card-bg: #1a1c23;
+  --border: #2a2d36;
+  --link: #5fb3ff;
+  --accent: #5ad1ff;
+}
+
+html, body, #root {
+  height: 100%;
+  background: var(--bg);
+  color: var(--text);
+}

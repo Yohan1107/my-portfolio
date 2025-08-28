@@ -1,0 +1,71 @@
+.skills{
+    text-align: center;
+    padding: 50px 20px;
+    background-color: var(--card-bg);
+    color: var(--text);
+}
+
+.skills h2{
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.skills-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+.skill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.skills:hover{
+    transform: scale(1.06);
+}
+
+.icon{
+    font-size: 60px;
+    margin-bottom: 10px;
+
+}
+
+.icon.react { 
+    color: #61DBFB; 
+}      
+.icon.js { 
+    color: #F7DF1E; 
+}         
+.icon.ts { 
+    color: #3178C6; 
+}         
+.icon.node { 
+    
+    color: #68A063; 
+
+}      
+.icon.html { 
+    color: #E44D26; 
+}       
+.icon.css { 
+    color: #264de4; 
+}        
+.icon.java { 
+    color: #f89820; 
+}       
+.icon.spring { 
+    color: #6DB33F; 
+}     
+.icon.api { 
+    color: #808080; 
+}       
+.icon.sql { 
+    color: #00648B; 
+}        
+.icon.pg { 
+    color: #336791; 
+}       
