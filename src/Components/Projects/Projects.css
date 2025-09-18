@@ -23,23 +23,23 @@
   border-radius: 12px;
   padding: 1.5rem;
   width: 300px;
-  height: 450px; 
+  height: 450px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
   text-align: center;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.288);
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-12px);
 }
 
 .project-card img {
-  width: 100%;             
-  height: 180px;           
-  object-fit: cover;       
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
   border-radius: 8px;
   margin-bottom: 1rem;
 }
@@ -56,32 +56,15 @@
 
 .project-card a {
   text-decoration: none;
-  color: var(--accent);
+  color: var(--text);
   padding: 10px 20px;
   border-radius: 5px;
   transition: background 0.3s;
+  border: 1px solid var(--border);
 }
 
 .project-card a:hover {
+  border-color: var(--link);
   filter: brightness(0.8);
+  color: var(--text);
 }
-
-/* === Ensure a visible box border on the "View Project" button (both themes) === */
-.projects .project-card a {                 /* 1 */
-  border: 1px solid var(--border);         /* 2 */
-  box-shadow: 0 1px 0 rgba(0,0,0,.06);     /* 3 */
-}
-
-/* === Dark mode: outline look with accent color === */
-[data-theme="dark"] .projects .project-card a {   /* 4 */
-  background: transparent;                        /* 5 */
-  color: var(--accent);                           /* 6 */
-  border-color: var(--accent);                    /* 7 */
-  box-shadow: none;                               /* 8 */
-}
-
-/* Optional: nice hover in dark mode */
-[data-theme="dark"] .projects .project-card a:hover {    /* 9 */
-  background-color: rgba(97,218,251,0.12);               /* 10 */
-}
-

@@ -1,14 +1,15 @@
-/* index.css - neutral, variable-driven */
-:root {
-  /* (tu peux laisser vide ici, tes vraies variables sont dans App.css) */
-}
+
+:root {}
 
 a {
   font-weight: 500;
   color: var(--link);
   text-decoration: none;
 }
-a:hover { text-decoration: underline; }
+
+a:hover { 
+  text-decoration: underline; 
+}
 
 body {
   margin: 0;
@@ -26,4 +27,22 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
-button:hover { border-color: var(--link); }
+button:hover { 
+  border-color: var(--link); 
+}
+
+/* Global responsive safety */
+*{ 
+  box-sizing: border-box; 
+}
+html{ 
+  scroll-behavior: smooth;
+  scroll-padding-top: 72px; 
+}
+body{ 
+  margin: 0; overflow-x: hidden; 
+}
+img, video{ 
+  max-width: 100%; height: auto; display: block; 
+}
+

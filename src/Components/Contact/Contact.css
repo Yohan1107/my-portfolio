@@ -1,59 +1,55 @@
-.contact{
-    padding: 60px;
-    text-align: center;
-    background: var(--card-bg);
+/* Contact */
+.contact {
+  padding: 60px 20px;
+  background: var(--card-bg);
+  color: var(--text);
+  text-align: center;
 }
 
-.contact h2{
-    font-size: 2.5rem;
-    margin: 20px;
+.contact h2 {
+  margin: 0 0 10px;
 }
 
-.contact p{
-    font-size: 1rem;
-    margin-bottom: 40px;
-    color: var(--text);
-    opacity: .85;
+.contact p {
+  max-width: 700px;
+  margin: 0 auto 12px;
+  opacity: .9;
 }
 
-.contact-form{
-    /*max-width: 600px;*/
-    width: 50%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.contact-form {
+  max-width: 580px;
+  margin: 0 auto;
+  display: grid;
+  gap: 12px;
 }
 
 .contact-form input,
-.contact-form textarea{
-    padding: 15px;
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    font-size: 1rem;
-    font-family: inherit;
-    background-color: var(--card-bg);
-    color: var(--text);
+.contact-form textarea {
+  width: 100%;
+  background: var(--card-bg);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px 14px;
 }
 
-.contact-form button{
-    padding: 15px;
-    background-color: var(--accent);
-    color: white;
-    font-size: 1rem;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+.contact-form button {
+  margin: 6px auto 0;
 }
 
-.contact-form button:hover{
-    filter: brightness(0.95);
+.form-success {
+  color: #16a34a;
+  margin-top: 8px;
 }
 
-.form-success { 
-    color: #198754; margin-top: 12px; 
+.form-error {
+  color: #ef4444;
+  margin-top: 8px;
 }
-.form-error { 
-    color: #dc3545; margin-top: 12px; 
+
+@media (max-width: 680px) {
+
+  .contact-form  {
+    width: 80%;
+  }
 }

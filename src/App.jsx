@@ -11,13 +11,13 @@ import Footer from './Components/Footer/Footer.jsx'
 function App() {
   return (
     <>
-      <Navbar/>
-      <Hero/>
-      <About/>
-      <Skills/>
-      <Projects/>
-      <Contact/>
-      <Footer/>
+      <Navbar />
+      <Hero />
+      <About />
+      <Skills />
+      <Projects />
+      <Contact />
+      <Footer />
     </>
   )
 }

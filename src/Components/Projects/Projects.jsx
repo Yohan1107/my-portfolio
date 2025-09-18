@@ -9,7 +9,7 @@ const projectsData = [
         tilte: "Portfolio Website",
         image: PortfolioPic,
         description: "My personal portfolio website built with React.js.",
-        link: "https://github.com/tonpseudo/portfolio"
+        link: "https://github.com/Yohan1107/my-portfolio"
     },
     {
         tilte: "To do app",
@@ -27,23 +27,23 @@ const projectsData = [
 ]
 
 const Projects = () => {
-  return (
-    <section className="projects" id="projects">
-        <h2>My Projects</h2>
-        <div className="projects-container">
-            {
-                projectsData.map((project, index) => (
-                    <div key={index} className='project-card'>
-                        <img src={project.image} alt={project.tilte} />
-                        <h3>{project.tilte}</h3>
-                        <p>{project.description}</p>
-                        <a href={project.link} target='_blank' rel='noopener noreferrer'>View Project</a>
-                    </div> 
-                ))
-            }
-        </div>
-    </section>
-  )
+    return (
+        <section className="projects" id="projects">
+            <h2>My Projects</h2>
+            <div className="projects-container">
+                {
+                    projectsData.map((project, index) => (
+                        <div key={index} className='project-card'>
+                            <img src={project.image} alt={project.tilte} />
+                            <h3>{project.tilte}</h3>
+                            <p>{project.description}</p>
+                            <a href={project.link} target='_blank' rel='noopener noreferrer'>View Project</a>
+                        </div>
+                    ))
+                }
+            </div>
+        </section>
+    )
 }
 
 export default Projects

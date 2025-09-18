@@ -1,4 +1,4 @@
-.footer{
+.footer {
     padding: 24px 20px;
     background: var(--card-bg);
     color: var(--text);
@@ -6,32 +6,34 @@
     text-align: center;
 }
 
-.footer .socials{
+.footer .socials {
     list-style: none;
     display: flex;
     gap: 16px;
     justify-content: center;
     margin-top: 8px;
     color: var(--text);
-} 
+}
 
-.footer .socials a{
+.footer .socials a {
     color: var(--link);
     text-decoration: none;
 }
 
-[data-theme="dark"] .footer .socials a{
-    background: transparent;                        
-  color: var(--accent);                           
-  border-color: var(--accent);                    
-  box-shadow: none;      
+[data-theme="dark"] .footer .socials a {
+    margin: 15px;
+    background: transparent;
+    color: var(--border);
+    border-color: var(--accent);
+    box-shadow: none;
 }
 
 [data-theme="dark"] .footer .socials a:hover {
-    padding: 10px;
-    background: transparent;                        
-    color: var(--accent);                           
-    border-color: var(--accent);                    
-    box-shadow: none;          
-    background-color: rgba(97,218,251,0.12);               
+    padding: 8px;
+    background: transparent;
+    color: var(--accent);
+    border-color: var(--accent);
+    border-radius: 10px;
+    box-shadow: none;
+    background-color: rgba(97, 218, 251, 0.12);
 }
