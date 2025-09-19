@@ -18,9 +18,11 @@
 
 .contact-form {
   max-width: 580px;
+  width: 100%;
   margin: 0 auto;
   display: grid;
   gap: 12px;
+  padding: 0 4px;
 }
 
 .contact-form input,
@@ -47,9 +49,11 @@
   margin-top: 8px;
 }
 
-@media (max-width: 680px) {
+@media (max-width:420px) {
 
-  .contact-form  {
-    width: 80%;
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px 12px;
+    font-size: .95rem;
   }
 }

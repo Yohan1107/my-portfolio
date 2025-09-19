@@ -8,6 +8,7 @@ body {
   text-align: center;
 }
 
+/* Light theme (base) */
 :root {
   --bg: #f4f4f4;
   --text: #292828;
@@ -17,6 +18,7 @@ body {
   --accent: #61DBFB;
 }
 
+/* Dark theme */
 [data-theme="dark"] {
   --bg: #f4f4f4;
   --text: #e6e6e6;
@@ -29,29 +31,13 @@ body {
 html,
 body,
 #root {
-  height: 100%;
+  height: auto;
   background: var(--bg);
   color: var(--text);
 }
 
-/* --- Responsive baseline --- */
-* {
-  box-sizing: border-box;
-}
 
-body {
-  margin: 0;
-  /* filet de sécurité si un élément dépasse par erreur */
-  overflow-x: hidden;
-}
-
-img,
-video {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
+/* Layout helpers */
 .container {
   max-width: 1100px;
   margin: 0 auto;

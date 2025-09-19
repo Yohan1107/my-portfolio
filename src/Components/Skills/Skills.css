@@ -17,21 +17,21 @@
     gap: 35px;
 }
 
+/* Apply hover on each card, not on the whole section (prevents overflow) */
 .skill {
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: transform 0.3s ease;
+    transition: transform .25s ease;
 }
 
-.skills:hover {
-    transform: scale(1.06);
+.skill:hover {
+    transform: translateY(-4px) scale(1.04);
 }
 
 .icon {
     font-size: 60px;
     margin-bottom: 10px;
-
 }
 
 .icon.react {
@@ -47,9 +47,7 @@
 }
 
 .icon.node {
-
     color: #68A063;
-
 }
 
 .icon.html {
